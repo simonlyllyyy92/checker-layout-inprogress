@@ -1,0 +1,91 @@
+#root {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Comfortaa", cursive;
+}
+
+.players > div {
+  display: inline-block;
+  border: 3px solid wheat;
+  font-size: 30px;
+  padding: 5px 10px;
+  min-width: 250px;
+  margin: 0 0 10px 0;
+  cursor: pointer;
+}
+
+.game-board {
+  display: inline-block;
+  border: 10px solid black;
+  position: relative;
+}
+
+.board-col {
+  display: inline-block;
+  max-width: 80px;
+}
+
+.square {
+  background: no-repeat #fff;
+  border: none;
+  height: 80px;
+  width: 80px;
+  padding: 5px;
+  background-origin: content-box;
+  background-size: contain;
+}
+
+.square.black {
+  background-color: burlywood;
+}
+
+.square.player1 {
+  background-image: url("img/redChess.png");
+}
+.square.player2 {
+  background-image: url("img/basic-blue-circle.jpg");
+}
+
+@media only screen and (max-width: 700px) {
+  .board-col {
+    max-width: 60px;
+  }
+  .square {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .board-col {
+    max-width: 50px;
+  }
+  .square {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .board-col {
+    max-width: 40px;
+  }
+  .square {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .board-col {
+    max-width: 35px;
+  }
+  .square {
+    height: 35px;
+    width: 35px;
+  }
+}
